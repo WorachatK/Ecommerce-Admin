@@ -1,4 +1,3 @@
-import "./app.css"
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import { BrowserRouter,Route,Routes,Navigate } from "react-router-dom";
@@ -11,6 +10,11 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 import { useSelector } from "react-redux"
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+`
 
 function App() {
   const user = useSelector((state)=>state.user.currentUser)
@@ -21,7 +25,7 @@ function App() {
       {admin && (
         <>
         <Topbar/>
-        <div className="container">
+        <Container>
           <Sidebar/>
           {user ? (
           <Routes>
@@ -38,7 +42,7 @@ function App() {
             <Login/>
           )}
           
-        </div>
+        </Container>
       </>
       ) }
     </BrowserRouter>
