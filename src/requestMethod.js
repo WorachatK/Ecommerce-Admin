@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = "http://localhost:5500/api/"
+const BASE_URL = "https://ecommerce23656api.herokuapp.com/api/"
 
 const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZjBlNDkxYzkwNmExOGY1YjA5OGRjMCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1OTk1NDM4OSwiZXhwIjoxNjYwMjEzNTg5fQ.bmRyvFAvs9u9jQrC392UNP6UyR30Yk8_bIG8Un5gd8s"
 
